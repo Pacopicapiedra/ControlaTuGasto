@@ -1,7 +1,0 @@
-body { font-family: sans-serif; padding: 20px; background: #f0f0f0; }
-h1 { color: #222; }
-section { margin-bottom: 20px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
-label { display: block; margin-bottom: 10px; }
-input, select, button { padding: 8px; font-size: 1em; width: 100%; margin-top: 5px; box-sizing: border-box; }
-button { background-color: #007bff; color: white; border: none; margin-top: 10px; }
-#resumen, #registros { margin-top: 20px; }
