@@ -16,11 +16,11 @@
   </section>
   <section>
     <label>Tipo de gasto:
-      <select id="tipo">
+      <select id="tipo" onchange="renderFormulario()">
         <option value="combustible">Combustible</option>
         <option value="mantenimiento">Mantenimiento</option>
-        <option value="averia">Avería</option>
-        <option value="neumatico">Neumático</option>
+        <option value="avería">Avería</option>
+        <option value="neumático">Neumático</option>
         <option value="papeles">Papeles obligatorios</option>
       </select>
     </label>
@@ -28,15 +28,16 @@
     <button id="guardar">💾 Guardar</button>
   </section>
   <section>
-    <button id="exportar">📤 Exportar a Excel</button>
+    <button id="exportar">📩 Exportar a Excel</button>
     <div id="resumen"></div>
     <div id="registros"></div>
   </section>
-<script src="xlsx.min.js"></script>
-<script src="main.js"></script>
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
-  }
-</script>
+  <script src="xlsx.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
+</html>
